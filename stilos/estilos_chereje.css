@@ -1,0 +1,33 @@
+/*.container{
+    margin: auto;
+    margin-top: 50px;
+    width:960px;
+    height: 800px;
+    background-color:red;
+}*/
+/*div#central{
+    margin: auto;
+    margin-top: 50px;
+    width: 960px;
+    height: 800px;
+}*/
+.medio{
+    margin: auto;
+    margin-left: 150px;
+    width: 980px;
+    height:520px;
+    background-color: burlywood;
+}
+.medio h1{
+    margin: 0;
+    text-align: center;
+    font-size: xx-large;
+    padding: 20px 0;
+    font-family: Roboto;
+}
+img#imagen1{ 
+    margin: auto;
+    width: 980px;
+    height: 420px;
+}
+
