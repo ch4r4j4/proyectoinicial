@@ -52,3 +52,12 @@ video{
     color: white;
     text-align: center;
 }
+/* Contenido princiapal*/
+.contenidoPrincipal{
+    height: 20rem;
+    background-color:blue;
+}
+.contenidoPrincipal h1{
+    color: white;
+    text-align: center;
+}
