@@ -55,7 +55,7 @@ video{
 /* Contenido princiapal*/
 .contenidoPrincipal{
     height: 20rem;
-    background-color:blue;
+    background-color:#4B5A56;
 }
 .contenidoPrincipal h1{
     color: white;
