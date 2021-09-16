@@ -10,10 +10,16 @@ html{
 .no-margin{
     margin: 0 auto;
 }
+img{
+    width: 100%;
+    height: 100%;
+}
 
 /*VIDEO*/
 .header{
+    height: 100%;
     position: relative;
+   
 }
 video{
     width: 100%;
@@ -21,10 +27,11 @@ video{
     background-repeat: no-repeat;   
 }
 .agrupar{
-    height: 80%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-flow: wrap;
     align-content: space-between;
+    justify-content: space-around;
 }
 .video-contenedor{
     position: absolute;
@@ -36,28 +43,145 @@ video{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 21rem;
+    /* margin-bottom: 21rem; */
 }
 .title{
     color: white;   
 }
 .sobreMi a{
-
     margin: 0.8rem;
     color: white;
     font-style: inherit;
     text-decoration: none;
 }
-.DatoCentral{
+.DatoCentral{  
     color: white;
     text-align: center;
+    margin-bottom: 2rem;
 }
 /* Contenido princiapal*/
-.contenidoPrincipal{
-    height: 20rem;
-    background-color:#4B5A56;
-}
 .contenidoPrincipal h1{
+    color: black;
+    text-align: center;
+}
+
+/*SOBRE MI*/
+.me{
+    height: 17rem;
+    align-content: center;
+    background-image: url(../img/img_wilson/sobreMi3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+.me h1{   
+    color: white;
+    padding-top: 5.5rem;
+    font-size: 5rem;
+}
+.lugar{
+    min-width: 30rem;
+    display: grid;
+    grid-template-columns: 50% repeat(1, 2fr);
+    column-gap: 3rem;
+    margin-bottom: 4rem;
+}
+.datos{
+    margin-top: 2rem;
+}
+.datos h2{
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+.datos p{
+    line-height: 1.5rem;
+}
+.datos span{
+    font-weight: 900;
+}
+/*FOOTER*/
+
+.abajo{
+    display: inline-flexbox;
+    height: 8rem;
+    background-color: black;
+    padding-top: 3.5rem;
+}
+.abajo p{
     color: white;
     text-align: center;
+}
+/*Musica*/
+.musica{
+    background-image: url(../img/img_wilson/portadaMusica.jpg);
+    min-height: 15rem;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 4rem;
+}
+.musica h1{
+    text-align: center;
+    color: white;
+    padding-top: 5.5rem;
+    font-size: 5rem;
+}
+.misgustos {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+
+}
+.contenedor1{
+    max-width: 65rem;
+    margin: 0 auto;
+}
+.album{
+    display: grid;
+    grid-template-columns: 50% repeat(1, 2fr);
+    column-gap: 1.5rem;
+    margin-bottom: 2.8rem;
+}
+.datosAlbum{
+    display: grid;
+    grid-template-columns: 50% repeat(1, 2fr);
+    column-gap: 1.2rem;
+}
+.datos p{
+    line-height: 1.5rem;
+    align-content: center;
+}
+
+/*overlay musica*/
+.m4a audio{
+    width: 100%;
+    padding-top: 5rem;
+}
+.texto {
+    color: white;
+    padding: .4rem;
+}
+.container{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #35223C;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    overflow: hidden;
+}
+.overlay audio{
+    
+}
+.container:hover .overlay{
+    height: 100%;
 }
