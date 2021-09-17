@@ -35,18 +35,16 @@ video{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin-bottom: 21rem; */
-}
-.title{
-    display: flex;
-    font-size: 1.8rem;
-    color: white;   
-    margin-left: 2rem;
+    align-content: space-around;
 }
 .title img{
     margin-top: 2.2rem;
-    height: 30%;
-    width: 30%;
+    margin-left: 2rem;
+    height:8rem;
+    width: 16rem;
+}
+.sobreMi{
+    padding-right: 2rem;
 }
 .sobreMi a{
     font-size: 1.2rem;
