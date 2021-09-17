@@ -26,35 +26,40 @@ video{
     height: 100%;
     background-repeat: no-repeat;   
 }
-.agrupar{
-    height: 100%;
-    display: flex;
-    flex-flow: wrap;
-    align-content: space-between;
-    justify-content: space-around;
-}
 .video-contenedor{
     position: absolute;
     width: 100%;
     height: 100%;
-    
 }
 .nav{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     /* margin-bottom: 21rem; */
 }
 .title{
+    display: flex;
+    font-size: 1.8rem;
     color: white;   
+    margin-left: 2rem;
+}
+.title img{
+    margin-top: 2.2rem;
+    height: 30%;
+    width: 30%;
 }
 .sobreMi a{
+    font-size: 1.2rem;
     margin: 0.8rem;
     color: white;
     font-style: inherit;
     text-decoration: none;
 }
+.DatoCentral h1{
+    font-size: 3.5rem;
+}
 .DatoCentral{  
+    margin-top: 19%;
     color: white;
     text-align: center;
     margin-bottom: 2rem;
