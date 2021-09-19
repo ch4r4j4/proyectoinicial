@@ -1,12 +1,19 @@
+html{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 16px;
+}
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
 }
 h1 {
     font-family: 'Open Sans', sans-serif;
     position: absolute;
-    top: 14px;
+    top: -1.25rem;
     left: 8%;
+    padding: 0rem;
     color: blanchedalmond; 
+    position: fixed;
 }
 .contenedor1{
     position: relative;
@@ -15,19 +22,24 @@ h1 {
 }
 .contenedor1 img{
     max-width: 100%;
+    height: 50%;
 }
 .menu{
+    display: block;
     position: absolute;
-    top: 30px;
+    position: fixed;
+    top: 0px;
     color: blanchedalmond; 
-    padding: 5px 15px;
+    padding: 0.3125rem 0.9375rem;
     background: black;
+    opacity: 90%;
     width: 98%;
     text-align: right;
+    
 }
 .menu li{
     list-style: none;
-    font: bold 14px verdana;
+    font: bold 0.875rem verdana;
     display: inline block;
     display: inline-block;
     color: blanchedalmond;
@@ -35,7 +47,7 @@ h1 {
 .menu li A{
     color: blanchedalmond;
     text-decoration: none;
-    padding: 1px 15px;
+    padding: 0.0625rem 0.9375rem;
 }
 .menu li A:hover{
     text-decoration: underline;
@@ -47,7 +59,7 @@ h1 {
     transform: translate(-50%, -50%);
     color: blanchedalmond; 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 50px;
+    font-size: 2.5rem;
 }
 .sobremi {
     width: 80%;
@@ -57,21 +69,20 @@ h1 {
 .sobremi h3{
     color:blueviolet;
     font-family: fantasy;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 .musica {
     width: 80%;
-    height: 600px;
+    height: 37.5rem;
     margin-left: 10%;
     max-width: 100%;
 }
 .musica h3{
     color:rgba(84, 235, 38, 0.795);
     font-family: fantasy;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 .musica img{
-    position: relative;
     left: 50%;
     max-width: 50%;
     top: -80%;
@@ -89,19 +100,19 @@ h1 {
 }
 .listamusical li p{
     color: rgb(62, 63, 65);
-    font-size: 12px;
+    font-size: 0.75rem;
     font-style: oblique;
 }
 .frases {
     width: 80%;
-    height: 40em;
+    height: 40rem;
     margin-left: 10%;
     max-width: 100%;
 }
 .frases h3{
     color:royalblue;
     font-family: fantasy;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 .frases img{
     max-width: 35%;
@@ -116,12 +127,37 @@ h1 {
 .contenedorFinal {
     display: block;
     width: 1350;
-    padding: 30px;
+    padding: 1.875rem;
     margin-top: auto;
     text-align: center;
     background: black;
     color: darkgray;
 }
 hr{
-    margin-top: -30px;
+    margin-top: -1.875rem;
+}
+.lugar{
+    min-width: 30rem;
+    display: grid;
+    grid-template-columns: 50% repeat(1, 2fr);
+    column-gap: 3rem;
+    margin-bottom: 4rem;
+}
+.datos{
+    margin-top: 2rem;
+}
+@media screen and (max-width: 1000px) {
+    html{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 745px) {
+    html{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 620px) {
+    html{
+        font-size: 8px;
+    }
 }

@@ -1,5 +1,6 @@
 html{
     font-family: 'Urbanist', sans-serif;
+    font-size: 16px;
 }
 
 /* general */
@@ -17,7 +18,7 @@ img{
 
 /*VIDEO*/
 .header{
-    height: 100%;
+    /* height: 40%; */
     position: relative;
    
 }
@@ -31,7 +32,7 @@ video{
     width: 100%;
     height: 100%;
 }
-.nav{
+.cabezera{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -40,10 +41,11 @@ video{
 .title img{
     margin-top: 2.2rem;
     margin-left: 2rem;
-    height:8rem;
+    height: 8rem;
     width: 16rem;
 }
 .sobreMi{
+    font-size: 2em;
     padding-right: 2rem;
 }
 .sobreMi a{
@@ -187,4 +189,19 @@ video{
 }
 .container:hover .overlay{
     height: 100%;
+}
+@media screen and (max-width: 1000px) {
+    html{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 745px) {
+    html{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 620px) {
+    html{
+        font-size: 8px;
+    }
 }
