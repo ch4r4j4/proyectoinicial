@@ -83,6 +83,7 @@ h1 {
     font-size: 2.5rem;
 }
 .musica img{
+    position: relative;
     left: 50%;
     max-width: 50%;
     top: -80%;
@@ -142,6 +143,9 @@ hr{
     grid-template-columns: 50% repeat(1, 2fr);
     column-gap: 3rem;
     margin-bottom: 4rem;
+}
+.lugar img{
+    position: inherit;
 }
 .datos{
     margin-top: 2rem;
