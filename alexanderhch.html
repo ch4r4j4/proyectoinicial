@@ -4,57 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stilos/anormalize.css">
     <link rel="stylesheet" href="stilos/estilos_Alexander.css">
     <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
  <body>
-    <header>
+    <header class="hero">
+        <div class="video">
+            <video src="img/img_Alexander/fondo1.mp4" autoplay loop></video>
+        </div>
+        
         <div class="overlay"></div>
-        <div class="opciones">
-            <div class="menu">
-                <nav>
-                    <ul>
-                      <li><a href="alexanderhch.html#mvida">Vida</a></li>
-                      <li><a href="alexanderhch.html#mdeporte">Deportes</a></li>
-                      <li><a href="alexanderhch.html#mcontacto">Contacto</a></li>
-                    </ul>
-                </nav>
+        <div class="container">
+            <div class="title">
                 <img src="img/img_Alexander/marca.png" alt="">
-            </div>  
-        </div>
+            </div>
+
+            <nav class="nav">
+                <a href="alexanderhch.html#modsobre" class="nav__items">Sobre mi</a>
+                <a href="alexanderhch.html#modpreferencias" class="nav__items">Preferencias</a>
+                <a href="alexanderhch.html#modcontactame" class="nav__items nav__items--cta">Contactame ahora</a>        
+            </nav>
             
+            <section class="hero__container">
+                <div class="hero__texts">
+                    <h1>
+                        Hola, Bienvenido a mi Sitio Web
+                    </h1>
+                    
+                    <h2>
+                        Pero antes, recuerda que la vida es única
+                    </h2>
+                    <a href="alexanderhch.html#modcontactame" class="hero__cta"> Contactame ahora </a>
+                </div>
+            </section>
+             
         </div>
-        <div class="absolute">
-            <h1>
-                Hola, Bienvenido a mi Sitio Web
-            </h1>
-        </div>
-        <video onloadeddata="this.muted=true" controls autoplay loop>
-            <source src="img/img_Alexander/fondo1.mp4">
-        </video> 
+
+        <div class="hero__wabe" style="overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div> 
+        
     </header>
-   
+    <main>
+        <section class="presentation container1">
+            <h2><a name="modsobre" class="titulos" >Sobre mi</a></h2>
+            <img src="img/img_Alexander/sobre mi.jpg" class="presentation__picture">
+            <h2 >Mi biografia, y mis admiraciones</h2>
+            <p class="presentation__copy">
+                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            </p>
+            <a href="alexanderhch.html#modcontactame" class="presentation__cta">Contactame ahora</a>
+            
+        </section>
+
+        <section class="about container1">
+            <div class="about__texts">
+                <h2 class="subtitles subrayados">Mi estudio primario y secundario</h2>
+                <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis expedita tempore, neque enim mollitia id. Alias, provident nisi numquam mollitia eos aliquid illo, in est quis quas, autem deleniti iure.</p>
+                <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis expedita tempore, neque enim mollitia id. Alias, provident nisi numquam mollitia eos aliquid illo, in est quis quas, autem deleniti iure.</p>
+            </div>
+
+            <figure class="about__img">
+                <img src="img/img_Alexander/soccer.svg" alt="" class="about__picture">
+            </figure>
+            
+            <figure class="about__img">
+                <img src="img/img_Alexander/universidad.svg" alt="" class="about__picture about__picture--left">
+            </figure>
+
+            <div class="about__texts">
+                <h2 class="subtitles subrayados">Mi estudio universitario</h2>
+                <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis expedita tempore, neque enim mollitia id. Alias, provident nisi numquam mollitia eos aliquid illo, in est quis quas, autem deleniti iure.</p>
+                <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis expedita tempore, neque enim mollitia id. Alias, provident nisi numquam mollitia eos aliquid illo, in est quis quas, autem deleniti iure.</p>
+            </div>
+            
+        </section>
+
+        <section class="presentation container1">
+            <h2><a name="modpreferencias" class="titulos" >Preferencias</a></h2>
+            <h2>Me considero una persona melomana, porque tengo gustos muy diversos a continuacion les presento mis gustos musicales</h2>
+
+            <div class="grid-container">
+
+                <div class="item1">
+
+                    <iframe class="music" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/677033088&color=%23006bad&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                </div>
+
+                <div class="informacion">
+                    <p>Autor: <span>Wos</span></p>
+                    <p>Album: <span>Melon Vino</span></p>
+                    <p>Cancion: <span>Melon Vino</span></p>
+                    <p>Año: <span>2018</span></p>
+                </div>
+
+                <div class="item3">
+
+                    <iframe class="music" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1065994858&color=%23006bad&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                </div>
+
+                <div class="informacion">
+                    <p>Autor: <span>Maroon 5</span></p>
+                    <p>Album: <span>Melon Vino</span></p>
+                    <p>Cancion: <span>Melon Vino</span></p>
+                    <p>Año: <span>2018</span></p>
+                </div>
+
+                <div class="item3">
+
+                    <iframe class="music" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/148286315&color=%23006bad&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                </div>
+
+                <div class="informacion">
+                    <p>Autor: <span>The beatles</span></p>
+                    <p>Album: <span>Melon Vino</span></p>
+                    <p>Cancion: <span>Melon Vino</span></p>
+                    <p>Año: <span>2018</span></p>
+                </div>
+
+                <div class="item3">
+
+                    <iframe class="music" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/148286315&color=%23006bad&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                </div>
+
+                <div class="informacion">
+                    <p>Autor: <span>The beatles</span></p>
+                    <p>Album: <span>Melon Vino</span></p>
+                    <p>Cancion: <span>Melon Vino</span></p>
+                    <p>Año: <span>2018</span></p>
+                </div>
+
+            </div>
+            
+        </section>
+    </main> 
+
+   <footer>
+       <div class="footer-content">
+           <h3><a class="titulos titulo_contactame" name="modcontactame">Contactame</a></h3>
+           <p>Puedes encontrarme en mis redes sociales</p>
+           <ul class="socials">
+               <li><a href="https://www.facebook.com/Alexand3rHCh"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+           </ul>
+       </div>
+       <div class="footer-bottom">
+           <p> Copyright &copy; 2021 Un mundo diferente - designed by <span>Alexander_HCH</span></p>
+       </div>
+    </footer>
     
-    <div class="vida">
-        <h3><A name="mvida">Vida</A></h3>
-        <hr/>
-    </div>
-
-
-    <div class="deporte">
-        <h3><A name="mdeporte">Deportes</A></h3>
-        <div class="fdeporte">
-            <p>Mis deportes favoritos </p>
-        </div>
-        <hr/>
-    </div>
-
-    <div class="contacto">
-        <h3><A name="mcontacto">Contactos</A></h3>
-        <hr/>
-    </div>
-    <div class="final">
-        Un mundo diferente © 2021
-    </div>
+    <script src="https://kit.fontawesome.com/89d34df44f.js" crossorigin="anonymous"></script>
  </body>
 </html>
