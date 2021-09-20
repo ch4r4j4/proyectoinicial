@@ -25,6 +25,7 @@ img{
 }
 .medio{
     margin: auto;
+<<<<<<< Updated upstream
     margin-left: 150px;
     width: 980px;
     height:520px;
@@ -33,6 +34,12 @@ img{
     font-family: Roboto;
     padding: 2.5rem;
     line-height: 2.8rem;
+=======
+    width: 100%;
+    height:620px;
+    background-image: url(img/img_chereje/monster.jpg);
+    background-position: center;
+>>>>>>> Stashed changes
 }
 .welcome h1{
     padding-top: 5rem;
