@@ -1,167 +1,272 @@
 html{
-    font-family: 'Urbanist', sans-serif;
-    font-size: 16px;
+    margin: 0 auto;
+    font-family: 'Bonheur Royale', cursive;
 }
-body {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.3rem;
+
+img{
+    width: 100%;
+    height: 100%;
 }
-h1 {
-    font-family: 'Open Sans', sans-serif;
-    position: absolute;
-    top: -1.25rem;
-    left: 8%;
-    padding: 0rem;
-    color: blanchedalmond; 
-    position: fixed;
+video{
+    width: 100%;
+    height: 100%;
+}
+/*HEADER*/
+.contenedor-general{
+    max-width: 60rem;
+    margin: 0 auto;
 }
 .contenedor1{
-    position: relative;
-    display: inline-block;
-    text-align: center;
 }
-.contenedor1 img{
-    max-width: 100%;
-    height: 50%;
-}
-.menu{
-    display: block;
-    position: absolute;
+.cabezera{
+    background-color: black;
     position: fixed;
-    top: 0px;
-    color: blanchedalmond; 
-    padding: 0.3125rem 0.9375rem;
-    background: black;
-    opacity: 90%;
-    width: 98%;
-    text-align: right;
-    
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 12rem; */
+}
+.cabezera h1{
+    padding-left: 3rem;
+    color: white;
+    font-family: 'Italianno', cursive;
+    font-size: 3rem;
+}
+.cabezera a{
+    padding-right: 3rem;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
 }
 .menu li{
-    list-style: none;
-    font: bold 0.875rem verdana;
-    display: inline block;
-    display: inline-block;
-    color: blanchedalmond;
+    margin-top: 1.5rem; /*1.5rem*/
+    margin-left: 2rem;
+
 }
-.menu li A{
-    color: blanchedalmond;
-    text-decoration: none;
-    padding: 0.0625rem 0.9375rem;
-}
-.menu li A:hover{
-    text-decoration: underline;
+.menu li a:hover{
+    color: greenyellow;
+    
 }
 .centrado{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: blanchedalmond; 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 2.5rem;
+    background-image: url(../img/img_aydee/ja.jpg);
+    background-size: 100%;
+    height: 6rem; /*30rem*/
+    padding-top: 33rem;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
 }
-.sobremi {
-    width: 80%;
-    margin-left: 10%;
-    max-width: 100%;
+
+/*sobre mi*/
+.historia{
+    display: grid;
+    grid-template-columns: 70% 30%  repeat(2, 1fr);
+    column-gap: 1rem;
 }
+
+/*musica*/
+.listamusical{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    column-gap: 2rem;
+    color: black;
+}
+.listamusical img{
+    align-self: center;
+    
+}
+.datosmusicales a{
+    color:black;
+}
+.datosmusicales a:hover{
+    color:rgba(84, 235, 38, 0.795);
+}
+.datosmusicales p{
+    font-style: oblique;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    color:darkseagreen;
+}
+.datosmusicales1 a{
+    color: black;
+}
+.datosmusicales1 a:hover{
+    color:rgba(84, 235, 38, 0.795);
+}
+.datosmusicales1 p{
+    font-style: oblique;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    color:darkseagreen;
+}
+/*FRASES*/
+/*.frasesGeneral{
+    display: grid;
+    grid-template-columns: 40% 60% repeat(2, 1fr);
+    column-gap: 2rem;
+    margin-bottom: 4rem;
+}
+.frasesGeneral img{
+    align-self: center;
+    background-attachment: fixed;
+   
+}*/
+.steve{
+    height: 30%;
+}
+.lasfrases{
+    min-width: 30rem;
+    display: grid;
+    grid-template-columns: 20% repeat(1, 2fr);
+    column-gap: 3rem;
+    margin-bottom: 4rem;
+}
+.letra{
+    margin-top: 2rem;
+}
+.letra p{
+    line-height: 1.5rem;
+    text-align: center;
+}
+/*Subtitulos*/
 .sobremi h3{
     color:blueviolet;
     font-family: fantasy;
     font-size: 2.5rem;
-}
-.musica {
-    width: 80%;
-    height: 37.5rem;
-    margin-left: 10%;
-    max-width: 100%;
 }
 .musica h3{
     color:rgba(84, 235, 38, 0.795);
     font-family: fantasy;
     font-size: 2.5rem;
 }
-.musica img{
-    position: relative;
-    left: 50%;
-    max-width: 50%;
-    top: -80%;
-}
-.listamusical{
-    position: relative;
-    width: 50%;
-}
-.listamusical li A{
-    text-decoration: none;
-    color: black;
-}
-.listamusical li A:hover{
-    text-decoration: underline;
-}
-.listamusical li p{
-    color: rgb(62, 63, 65);
-    font-size: 0.75rem;
-    font-style: oblique;
-}
-.frases {
-    width: 80%;
-    height: 40rem;
-    margin-left: 10%;
-    max-width: 100%;
-}
 .frases h3{
     color:royalblue;
     font-family: fantasy;
     font-size: 2.5rem;
 }
-.frases img{
-    max-width: 35%;
+/*-tipo de letra*/
+p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
 }
-.lasfrases{
-    position: relative;
-    left: 40%;
-    width: 60%;
-    max-width: 75%;
-    top: -80%;
+.frases li{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
 }
-.contenedorFinal {
-    display: block;
-    width: 1350;
-    padding: 1.875rem;
-    margin-top: auto;
+.listamusical a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+/*footer*/
+.contenedorFinal{
+    padding-top: 2rem;
     text-align: center;
-    background: black;
-    color: darkgray;
+    color: white;
+    height: 4rem;
+    font-size: 2rem;
+    background-color: black;
 }
+/*
+IMAGEN*/
+.separador{
+    background-image: url(../img/img_aydee/aurora.jpg);
+    height: 8rem;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.separadormusical{
+    background-image: url(../img/img_aydee/concierto.jpg);
+    height: 8rem;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.separadormusical h1{
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
+.separador h1{
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
+
 hr{
-    margin-top: -1.875rem;
+    margin-top: -2rem;
 }
-.lugar{
-    min-width: 30rem;
-    display: grid;
-    grid-template-columns: 50% repeat(1, 2fr);
-    column-gap: 3rem;
-    margin-bottom: 4rem;
-}
-.lugar img{
-    position: inherit;
-}
-.datos{
-    margin-top: 2rem;
+@media screen and (max-width:650px) {
+    /*.frasesGeneral{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .frasesGeneral img{
+        width: 60%;
+        padding-left: 6rem;
+    }*/
+    .lasfrases{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .lasfrases img{
+        width: 40%;
+        padding-left: 15rem;
+        text-align: center;
+    }
+    .listamusical{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .listamusical img{
+        width: 80%;
+        padding-left: 6rem;
+    }
+    html{
+        font-size: 9px;
+    }
+    .centrado{
+        height: 70px;
+        padding-top: 90px;
+    }
 }
 @media screen and (max-width: 1000px) {
     html{
         font-size: 12px;
+    }
+    .centrado{
+        height: 70px;
+        padding-top: 340px;
     }
 }
 @media screen and (max-width: 745px) {
     html{
         font-size: 10px;
     }
+    .centrado{
+        height: 55px;
+        padding-top: 230px;
+    }
 }
 @media screen and (max-width: 620px) {
     html{
         font-size: 8px;
+    }
+    .centrado{
+        height: 40px;
+        padding-top: 184px;
+    }
+    .contenedor-general{
+        max-width: 400px;
+        margin: 0 auto;
     }
 }
