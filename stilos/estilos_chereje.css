@@ -12,7 +12,9 @@ body {
     list-style: none;
     margin-right: 1.6rem;
   }
-  
+  .lista li{
+      text-decoration: none;
+  }
   #primero {
     font-size: 1.9rem;
   }
