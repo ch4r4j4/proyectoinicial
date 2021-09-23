@@ -4,23 +4,257 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BlogWil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stilos/estilos_wilberth.css">
+    <link rel="stylesheet" href="stilos/anormalize.css">
+    <link rel="shortcut icon" href="favicon.png">
 </head>
 <body>
-    <header >
-        <div>
-            Wilberth
+    <header class="encabezado">
+        <div class="contenido-navegacion">
+            <div class="navegacion contenedor">
+                <div class="nombre-pag">
+                    Blog Wilberth
+                </div>
+                <nav class="navegacion-url ">
+                    <a href="#sobremi">Sobre Mi</a>
+                    <a href="#musicas">Musicas</a>
+                    <a href="#peliculas">Peliculas</a>
+                </nav>
+            </div>
         </div>
-        <nav>
-            <a href="#">Dibujos</a>
-            <a href="#">Paginas</a>
-            <a href="#">Sobre Mi</a>
-        </nav>
-        
+        <div class="video1">
+            <div class="degradado">
+                <p>
+                    Bienvenidos
+                </p>
+            </div>
+            <video autoplay loop muted>
+                <source src="img/img_wilberth/laptop.mp4"> 
+            </video>
+            <!-- <video src="img/img_wilberth/laptop.mp4" autoplay loop muted></video> -->
+        </div>
     </header>
-    <section>
-
+    <section class="contenedor" id="sobremi">
+        <h3>Sobre Mi</h3>
+        <div class="sobre-mi grid-3">
+            <div class="nacimiento">
+                <!-- <img src="" alt=""> -->
+                <p>
+                    <span>lugar de nacimiento :</span>
+                    Puno
+                </p>
+            </div>
+            <div class="estudios">
+                <!-- <img src="" alt=""> -->
+                <div class="cont-estudios">
+                    <span>Estudios : </span>
+                    <p>I.E.P N 70192</p>
+                    <p>I.E.S.E. Telesforo Catacora</p>
+                    <p>Universidad Nacional del Altiplano</p>
+                </div>
+            </div>
+            <div class="hobbies">
+                <span>Hobbies :</span>
+                <p>Dota 2</p>
+                <p>Dibujo</p>
+                <p>Ver Peliculas</p>
+            </div>
+        </div>
     </section>
-    <footer class="pie-pagina"></footer>
+    <section class="paginas-personales">
+        <div class="contenedor">
+            <h3>Paginas</h3>
+            <div class="list-paginas">
+                <div class="cont-pagina">
+                    <img src="img/img_wilberth/pagina1.png" alt="">
+                    <div class="button">
+                        <a href="https://festivalwilberth.netlify.app/">Ir a pagina</a>
+                    </div>
+                </div>
+                <div class="cont-pagina">
+                    <img src="img/img_wilberth/pagina2.png" alt="">
+                    <div class="button">
+                        <a href="https://blogcafewilberth.netlify.app/">Ir a pagina</a>
+                    </div>
+                </div>
+                <div class="cont-pagina">
+                    <img src="img/img_wilberth/pagina3.png" alt="">
+                    <div class="button">
+                        <a href="https://bienesraiceswilberth.netlify.app/">Ir a pagina</a>
+                    </div>
+                </div>
+                <div class="cont-pagina">
+                    <img src="img/img_wilberth/pagina4.png" alt="">
+                    <div class="button">
+                        <a href="https://horariosistem21.netlify.app/">Ir a pagina</a>
+                    </div>
+                </div>
+                <div class="cont-pagina">
+                    <img src="img/img_wilberth/pagina5.png" alt="">
+                    <div class="button">
+                        <a href="https://gifted-kare-d38f2e.netlify.app/">Ir a pagina</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contenedor" id="musicas">
+        <h3>Musicas</h3>
+        <div class="all-cont-musica">
+            <div class="cont-musica grid-2">
+                <div class="img-cont-musica">
+                    <img src="img/img_wilberth/wallerman.jpg" alt="">
+                </div>
+                <div class="det-musica">
+                    <p>
+                        <span>autor :</span>
+                        Nathan Evans
+                    </p>
+                    <p>
+                        <span>titulo :</span>
+                        Wellerman (Sea Shanty)
+                    </p>
+                    <p>
+                        <span>lanzamiento : </span>
+                        2021
+                    </p>
+                    <audio src="img/img_wilberth/NathanEvansWellerman.mp3" controls></audio>
+                </div>
+            </div>
+            <div class="cont-musica grid-2">
+                <div class="img-cont-musica">
+                    <img src="img/img_wilberth/headAndHeart.jpg" alt="">
+                </div>
+                <div class="det-musica">
+                    <p>
+                        <span>autor :</span>
+                        Joel Corry
+                    </p>
+                    <p>
+                        <span>titulo :</span>
+                        Head & Heart 
+                    </p>
+                    <p>
+                        <span>lanzamiento : </span>
+                        2020
+                    </p>
+                    <audio src="img/img_wilberth/JoelCorryHead&Heart.mp3" controls></audio>
+                </div>
+            </div>
+            <div class="cont-musica grid-2">
+                <div class="img-cont-musica">
+                    <img src="img/img_wilberth/yourJasonMraz.jpg" alt="">
+                </div>
+                <div class="det-musica">
+                    <p>
+                        <span>autor :</span>
+                        Jason Mraz
+                    </p>
+                    <p>
+                        <span>titulo :</span>
+                        I'm Yours
+                    </p>
+                    <p>
+                        <span>lanzamiento : </span>
+                        2008
+                    </p>
+                    <audio src="img/img_wilberth/JasonMrazI'mYours.mp3" controls></audio>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="cont-pelicula-all" id="peliculas">
+        <div class="degradado-pe"></div>
+        <div class="contenedor contenedor-pelicula">
+            <h3>Peliculas</h3>
+            <div class="all-cont-peliculas">
+                <div class="cont-pelicula grid-2">
+                    <div class="img-cont-musica">
+                        <img src="img/img_wilberth/Snowden.jpg" alt="">
+                    </div>
+                    <div class="det-musica">
+                        <p>
+                            <span>titulo :</span>
+                            Snowden
+                        </p>
+                        <p>
+                            <span>fecha de estreno : </span>
+                            22 de septiembre de 2016
+                        </p>
+                        <p>
+                            <span>descripcion :</span>
+                            La épica historia del hombre que en 2013 puso en jaque a los EE.UU. Cuando Edward J. Snowden desveló los documentos del programa de vigilancia mundial secreto de la NSA abrió los ojos del mundo y cerró las puertas de su propio futuro. Se vio obligado a renunciar a su carrera, a su novia de toda la vida y a su patria. ¿Fue un patriota o un traidor?
+                        </p>
+                    </div>
+                </div>
+                <div class="cont-pelicula grid-2">
+                    <div class="img-cont-musica">
+                        <img src="img/img_wilberth/laRedSocial.jpg" alt="">
+                    </div>
+                    <div class="det-musica">
+                        <p>
+                            <span>titulo :</span>
+                            Red social
+                        </p>
+                        <p>
+                            <span>fecha de estreno : </span>
+                            2 de diciembre de 2010
+                        </p>
+                        <p>
+                            <span>descripcion :</span>
+                            La historia de los jóvenes fundadores de la popular red social Facebook, especialmente de su creador más conocido, Mark Zuckerberg. Su leyenda reza: 'No se hacen 500 millones de amigos sin hacer unos cuantos enemigos'.
+                        </p>
+                    </div>
+                </div>
+                <div class="cont-pelicula grid-2">
+                    <div class="img-cont-musica">
+                        <img src="img/img_wilberth/Jobs.jpg" alt="">
+                    </div>
+                    <div class="det-musica">
+                        <p>
+                            <span>titulo :</span>
+                            Steve Jobs
+                        </p>
+                        <p>
+                            <span>fecha de estreno : </span>
+                            23 de octubre de 2015
+                        </p>
+                        <p>
+                            <span>descripcion :</span>
+                            La vida y carrera del cofundador de "Apple" Steve Jobs estuvo marcada por tres presentaciones de productos que revolucionaron la industria de la informática: el lanzamiento del legendario "Macintosh", el NeXT y el iMac.
+                        </p>
+                    </div>
+                </div>
+                <div class="cont-pelicula grid-2">
+                    <div class="img-cont-musica">
+                        <img src="img/img_wilberth/Transcendence1.jpg" alt="">
+                    </div>
+                    <div class="det-musica">
+                        <p>
+                            <span>titulo :</span>
+                            Transcendence: Identidad virtual
+                        </p>
+                        <p>
+                            <span>fecha de estreno : </span>
+                            12 de junio de 2014
+                        </p>
+                        <p>
+                            <span>descripcion :</span>
+                            El Dr. Will Caster, la mayor autoridad del mundo en inteligencia artificial, está llevando a cabo experimentos muy controvertidos para crear una máquina muy especial.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="contenedor">
+        <h3>Dibujos</h3>
+    </section> -->
+    <footer class="pie-pagina">
+        <span>&copy;copyright - 2021, Todos los derechos reservado , patrocinado por mancos.com</span>
+    </footer>
 </body>
 </html>
