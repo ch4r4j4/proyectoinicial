@@ -110,10 +110,11 @@ video{
 /*FOOTER*/
 
 .abajo{
+    
     display: inline-flexbox;
-    height: 30rem;
-    background-color: black;
-    padding-top: 3.5rem;
+    height: 25rem;
+    background-color: #4D5252 ;
+    padding-top: 2rem;
 }
 .img-footer{
     padding: 0 8rem 0 0; 
@@ -128,20 +129,30 @@ video{
     column-gap: 8rem;
 }
 .footer img{
-    /* width: 4;
-    height: 30%; */
 }
 .iconos img{
+    margin-left: 2.5rem;
+    /* margin-top: 2rem; */
     align-items: center;
     width: 4rem;
     height: 4rem;
 }
-.rs{
+.iconos img:hover{
+    width: 4.5rem;
+    height: 4.5rem;
     
+}
+.rs h1{
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.rs{
     display: flex;  
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    justify-content: space-around;
 }
 /*Musica*/
 .musica{

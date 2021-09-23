@@ -12,8 +12,13 @@ body {
     list-style: none;
     margin-right: 1.6rem;
   }
-  .lista li{
+  .lista a{
       text-decoration: none;
+      color: black;
+  }
+  .lista a:hover{
+    font-size: 1.2rem;
+    color: blue;
   }
   #primero {
     font-size: 1.9rem;
