@@ -7,12 +7,14 @@ body {
   p {
     font-size: 1.25rem;
   }
-  
+
   li {
     list-style: none;
     margin-right: 1.6rem;
   }
-  
+  .lista li{
+      text-decoration: none;
+  }
   #primero {
     font-size: 1.9rem;
   }
@@ -44,7 +46,7 @@ body {
     margin-bottom: 2.5rem;
   }
   
-  a {
+  .titular a {
     font-size: 0.87rem;
     background: #5cb8ff;
     padding: 1.25rem 1.8rem 1.25rem 1.8rem;
