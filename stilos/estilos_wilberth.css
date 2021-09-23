@@ -38,6 +38,7 @@ h3 {
 .contenedor{
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 4rem;
 }
 
 
@@ -47,6 +48,7 @@ h3 {
     margin-bottom: 3rem;
 }
 .contenido-navegacion{
+    
     z-index: 1;
     position: absolute;
     width: 100%;
@@ -83,14 +85,15 @@ h3 {
 }
 .video1{
     width: 100%;
-    height: 70rem;
+    height: 100%;
     position: relative;
     overflow: hidden; 
 }
 video {
-    background-color: black;
     width: 100%;
     display: block;
+    background-size: cover;
+    max-height: 80rem;
 }
 .degradado{
     width: 100%;
@@ -114,6 +117,37 @@ video {
     margin: auto;
     background: #fff;
 }
+/* paginas */
+@media (min-width:760px){
+    .list-paginas {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+    }
+}
+.list-paginas img{
+    width: 100%;
+    border-radius: .5rem;
+}
+.list-paginas .button {
+    background-color: #2B5799;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    text-align: center;
+}
+.list-paginas a{
+    color: white;
+}
+.list-paginas .button:hover{
+    color: white;
+    font-size: 1.8rem;
+    background-color: #6E9DE6;
+    cursor: pointer;
+    margin-top: -.2rem;
+}
+.cont-pagina{
+    margin-bottom: 2rem;
+}
 /* sobre mi  */
 .sobre-mi span{
     font-weight: bold;
@@ -130,7 +164,7 @@ video {
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 }
-@media(min-width:760px){
+@media(min-width:1050px){
     .all-cont-musica{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -178,7 +212,7 @@ video {
 .det-musica audio {
     margin-top: 3rem;
 }
-@media(min-width:760px){
+@media(min-width:1050px){
     .all-cont-peliculas{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
