@@ -32,6 +32,7 @@ body{
 }
 
 .title img{
+    position: relative;
     margin-top: 0;
     margin-left: 0;
     height:16rem;
@@ -116,8 +117,7 @@ body{
 }
 
 .hero__texts{
-    width: 70%;
-    margin-bottom: 400px;
+    width: 70rem;
     color: #fff;
     text-align: center;
     margin: 0rem 0rem 30rem -2rem;
@@ -263,7 +263,7 @@ footer{
     left: 0;
     right: 0;
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding-top: 40px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -325,7 +325,7 @@ footer{
 
 .footer-bottom{
     background: rgba(0, 0, 0, 0.397);
-    width: 100vw;
+    width: 100%;
     padding: 20px 0;
     text-align: center;
 }
@@ -346,10 +346,10 @@ footer{
 
 .grid-container{
 
-    height: 580px;
+    height: 870px;
     display: grid;
     grid-template-columns: auto auto 200px auto;
-    grid-template-rows: 250px 250px;
+    grid-template-rows: 250px 250px 250px;
     align-content: space-between;
     padding: 20px;
 
