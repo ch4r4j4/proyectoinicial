@@ -11,35 +11,56 @@
     width: 960px;
     height: 800px;
 }*/
+/*GENERAL*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /**ESTO DA A CONOCER A 1 REM =10PX.
+    /** 10 rem**/
+}
+/* Para que el ancho del margen no haga conflicto con el Padding*/
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body{
+
+    font-family: Roboto;
+    font-size: 1.2rem;
+    text-align: 1.5;
+    line-height: 2;  
+}
 .welcome{
-    min-height: 20rem;
-    background-image: url(../img/img_chereje/monster.jpg);
+   /* min-height: 20rem;
+    /*background-image: url(../img/img_chereje/monster.jpg);
     background-position: center;
     background-size: cover;
     align-content: center;
-    margin-bottom: 4rem;
+    margin-bottom: 4rem;*/
 }
-img{
-    width: 100%;
-    height: 100%;
+.header{
+   background-image: url(../img/img_chereje/machup.jpg);
+   padding: 2rem;
+   background-position: center;
+   background-size: cover;
+   height: 60rem; 
 }
 .medio{
     margin: auto;
-<<<<<<< Updated upstream
+
     margin-left: 150px;
     width: 980px;
     height:520px;
     background-color: burlywood;
     text-align: center;
-    font-family: Roboto;
     padding: 2.5rem;
     line-height: 2.8rem;
-=======
     width: 100%;
     height:620px;
     background-image: url(img/img_chereje/monster.jpg);
     background-position: center;
->>>>>>> Stashed changes
+
 }
 .welcome h1{
     padding-top: 5rem;
