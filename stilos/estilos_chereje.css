@@ -23,7 +23,7 @@ body {
   }
   .lista a:hover{
     font-size: 1.2rem;
-    color: blue;
+    color: darkslategray;
   }
   #primero {
     font-size: 1.9rem;
