@@ -1,0 +1,228 @@
+/*normal*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Alegreya', serif;
+
+}
+img {
+    max-width: 100%;
+}
+/*normal*/
+/*css*/
+/*nav*/
+body{
+    background-color: rgb(253, 5, 5);
+}
+.contenedor{
+    display: flex;
+    font-size: 1rem;
+    color: #f8f8f8;
+    width: 100%;
+    position: relative;
+}
+.contenedor__img{
+    display: inline-block;
+    
+    max-width: 100%;
+    margin: auto;
+}
+.contenedor__menu{
+    display: flex;
+    height: 3rem;
+    opacity: 0.5;
+    width: 100%;
+    /*position: absolute;*/
+    background-color: #00020e;
+    position: fixed;
+    
+}
+.contenedor__obs{
+    
+    display: inline;
+    margin: 1rem;
+    text-align: left;
+    color :#dae7e7;
+    text-decoration: none;
+    margin-left: 5rem;
+    
+}
+.contenedor__botons{
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+    margin-top: 1rem;
+}
+.contenedor__botons a{
+    width: 100%;
+    margin: 1rem 2rem 0.2rem 1rem;
+    text-decoration: none;
+    color: #dae7e7;
+
+}
+.contenedor__contenido{
+    position: absolute;
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: center;
+    top: 40%;
+    left: 0%;
+    right: 0;
+    /*opacity: 0.5;*/
+    
+    color: #00020e;
+}
+.contenedor__contenido div{
+    position: relative;
+    padding: 4rem;
+    background-color: #aad3d1;
+    opacity: 0.5;
+    
+
+}
+.contenedor__contenido h1{
+    position: relative;
+    color: black;
+    margin-top: -6rem;
+    
+
+}
+
+/*nav*/
+/*section1*/
+.acerca{
+    display: block;
+    text-align: center;
+    background-color: #404040;
+    
+}
+.acerca__titulo{
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(199, 127, 33);
+}
+.acerca_contenedor{
+    display: flex;
+}
+.acerca__contenido{
+    /*background-color: rgb(0, 247, 235);*/
+    margin: 2.5rem 10rem 2.5rem 2.5rem;
+    
+}
+.acerca__interior{
+    margin-top: -2rem;
+}
+.acerca__contenido--letras{
+    color: #f4f4f4 ;
+}
+.acerca__contenido--letras h2{
+    /*background-color: blueviolet;*/
+    padding-bottom: 3rem;
+    font-style: inherit;
+}
+.acerca__contenido--letras h4{
+    font-weight: bold;
+    padding: 1rem 0 1rem 0;
+}
+.acerca__contenido--letras p{
+    line-height: 1.5;
+    text-align: justify;
+}
+.acerca__imagen{
+    padding: 2.5rem 2.5rem 2.5rem 0 ;
+    margin-left: 10rem;
+    max-width: 30%;
+    padding-left: 2rem;
+}
+
+/*section1*/
+/*section2*/
+.habilidades{
+    display: block;
+    background-color: #333;
+   
+    
+}
+.habilidades__imagen{
+    position: absolute;
+    opacity: 0.2;
+    max-width: 100%;
+    /*margin-top: -36rem;*/
+}
+.habilidades__titulo{
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+.habilidades__contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    padding-bottom: 2.50rem;
+    
+}
+.habilidades__contenido{
+    position: relative;
+    border-radius: 1rem;
+    border: lightgray solid 0.01px;
+    background-color: #333;
+    max-width: 25%;
+    height: 25rem;
+    padding: 0rem 0.5rem 2rem 0.5rem;
+    
+}
+.habilidades__contenedor :hover{
+    background-color: #111;
+    
+}
+.habilidades__contenido img{
+    position: absolute;
+    opacity: 0.2;
+}
+.habilidades__contenido--letras h4{
+    text-align: center;
+    font-size: 2rem;
+}
+.habilidades__contenido--letras p{
+    text-align: justify;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    line-height: 1.6;
+
+
+}
+/*****************************************************************/
+/*section3*/
+.contacto{
+    display: flex;
+    background-color: #fff;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    
+}
+/*section3*/
+/*footer*/
+.footer{
+    display: block;
+    position: relative;
+    background-color: black;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+    color: #f8f8f8;;
+    
+}
+/*footer*/
+
+
+/*
+.color1 {color: #aad3d1;}
+.color2 {color: #dae7e7;}
+.color3 {color: #00020e;}
+.color4 {color: #717a7c;}
+.color5 {color: #f8f8f8;}
+*/
