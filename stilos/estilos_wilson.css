@@ -21,7 +21,7 @@ img{
     position: relative;
 }
 .video{
-    position: relative;
+    /* position: relative; */
 }
 video{
     width: 100%;
@@ -110,10 +110,11 @@ video{
 /*FOOTER*/
 
 .abajo{
+    
     display: inline-flexbox;
-    height: 30rem;
-    background-color: black;
-    padding-top: 3.5rem;
+    height: 25rem;
+    background-color: #4D5252 ;
+    padding-top: 2rem;
 }
 .img-footer{
     padding: 0 8rem 0 0; 
@@ -125,23 +126,40 @@ video{
 .footer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
     column-gap: 8rem;
 }
 .footer img{
-    /* width: 4;
-    height: 30%; */
 }
-.iconos img{
+/* .iconos img{
+    margin-left: 2.5rem;
+    margin-top: 2rem; 
     align-items: center;
     width: 4rem;
     height: 4rem;
+}*/
+.iconos a{
+    color: black;
+    text-decoration: none;
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+.iconos a:hover{
+    color: white;
+    font-size: 3.1rem;
+    
+}
+.rs h1{
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 500;
 }
 .rs{
-    
     display: flex;  
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5.5rem;
 }
 /*Musica*/
 .musica{
@@ -244,4 +262,38 @@ video{
     background-color: #4CAF50;
     color: white;
 
+}
+/*redes Sociales*/
+.redesSociales{
+    position: fixed;
+    top: 25rem;
+}
+.redesSociales a{
+    color: black;
+    display: block;
+    font-size: 2.8rem;
+    text-decoration: none;
+    /* margin: 2rem; */
+    /* position: fixed; */
+}
+.redesSociales .fa-twitter{
+    padding:.5rem 1.5rem .5rem 1.5rem;
+    background-color:  #1AD6D6;
+}
+.redesSociales .fab:hover{
+    color: white;
+    /* padding:.5rem 2rem .5rem 2rem */
+
+}
+.redesSociales .fa-whatsapp{
+    padding:.5rem 1.5rem .5rem 1.5rem;
+    background-color:  #4ADE4E ;
+}
+.redesSociales .fa-instagram{
+    padding:.5rem 1.5rem .5rem 1.5rem;
+    background-color:  #fF5733  ;
+}
+.redesSociales .fa-facebook{
+    padding:.5rem 1.5rem .5rem 1.5rem;
+    background-color:  #349CDF; 
 }
