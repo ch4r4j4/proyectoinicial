@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,100;1,300&display=swap');
+
 :root{
     --backgraund: linear-gradient(135deg, #006bad 0%,#006bad46 100%);
     --color-primary: #006bad;
     --color-secondary: #006bad;
     --boton-padding: 20px 40px;
-
 }
 
 body{
+    font-family: 'Montserrat', sans-serif;
     font-family: 'Boogaloo', cursive;
 }
 .container{
@@ -18,6 +20,7 @@ body{
     max-width: 100%;
     position: absolute;
     text-align: center;
+    font: 'Montserrat';
     
 }
 .container1{
@@ -130,7 +133,7 @@ body{
     margin: 15px 0;
     text-align: center;
 }
-.hero__cta{
+.hero__ctaaaa{
     display: inline-block;
     background: #fff;
     padding: var(--boton-padding);
@@ -138,6 +141,90 @@ body{
     text-decoration: none;
     border-radius: 40px;
     margin: 20px;
+}
+
+.hero__cta{
+    display: inline-block;
+    background-color: #fff;
+    padding: 1.2em 3em;
+    color: var(--color-primary);
+    text-decoration: none;
+    border-radius: 3em;
+    margin: auto;
+}
+
+.mod{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #006baddc;
+    display: flex;
+
+    --opacity: 0;
+    --pointer: none;
+
+    opacity: var(--opacity);
+    pointer-events: var(--pointer);
+
+    transition: opacity .5s;
+}
+
+.mod:target{
+    --opacity: 1;
+    --pointer: unset;
+
+}
+
+.mod__container{
+    margin: auto;
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    overflow: hidden;
+    text-align: center;
+    padding: 2.5em 1.5em;
+    border-radius: 2em;
+
+}
+
+.mod__picture{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-bottom: 2em;
+
+}
+
+.mod__img{
+    width: 100%;
+    display: block;
+}
+
+.mod__title{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.mod__paragraph{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+
+.mod__close{
+    display: inline-block;
+    border: 1px solid;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+    border-radius: .5em;
+}
+.mod__close:hover{
+    color: #006bad;
 }
 
 
@@ -207,7 +294,7 @@ h1::after{
     width: 100%;
     height: 100%;
     position: absolute;
-    background: #006bad4b;
+    background: #006bad77;
     
 }
 
@@ -247,6 +334,7 @@ h1::after{
     margin: 0 100px 0 100px;
     justify-content: inherit;
     padding: 10px;
+    font-family: 'Montserrat';
 }
 
 .subrayados{
@@ -384,10 +472,12 @@ footer{
     width: 300px;
     border: 3px solid #006bad;
     float: right;
-    box-shadow: 0 0 10px #006bad;
+    
     flex-wrap: wrap;
 }
-
+.music:hover{
+    box-shadow: 0 0 10px #006bad;
+}
 
 
 
