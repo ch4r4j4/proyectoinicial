@@ -110,14 +110,49 @@ video{
 /*FOOTER*/
 
 .abajo{
+    
     display: inline-flexbox;
-    height: 8rem;
-    background-color: black;
-    padding-top: 3.5rem;
+    height: 25rem;
+    background-color: #4D5252 ;
+    padding-top: 2rem;
+}
+.img-footer{
+    padding: 0 8rem 0 0; 
 }
 .abajo p{
     color: white;
     text-align: center;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
+}
+.footer img{
+}
+.iconos img{
+    margin-left: 2.5rem;
+    /* margin-top: 2rem; */
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+}
+.iconos img:hover{
+    width: 4.5rem;
+    height: 4.5rem;
+    
+}
+.rs h1{
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.rs{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
 /*Musica*/
 .musica{
@@ -143,7 +178,7 @@ video{
 
 }
 .contenedor1{
-    max-width: 65rem;
+    max-width: 75rem;
     margin: 0 auto;
 }
 .album{
