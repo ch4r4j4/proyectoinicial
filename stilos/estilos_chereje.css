@@ -14,11 +14,16 @@ body {
   }
   .lista a{
       text-decoration: none;
+      color: darkslategray;
+  }
+  .lista a:hover{
+      font-size: 1.2rem;
+      font-weight: bold;
       color: black;
   }
   .lista a:hover{
     font-size: 1.2rem;
-    color: blue;
+    color: darkslategray;
   }
   #primero {
     font-size: 1.9rem;
@@ -36,16 +41,20 @@ body {
   }
   
   .titular {
-    text-align: center;
-    margin-top: 12.5rem;
+      text-align: center;
+    margin-top: 14.8rem;
     color: white;
   }
   
-  h1 {
+  .titular h1 {
     font-size: 3.75rem;
     margin: 0;
   }
-  
+
+  .titular a:hover{
+      font-size: 1rem;
+      background-color: steelblue;
+  }
   h2 {
     font-size: 1.5rem;
     margin-bottom: 2.5rem;
@@ -53,9 +62,10 @@ body {
   
   .titular a {
     font-size: 0.87rem;
-    background: #5cb8ff;
+    background-color: seagreen;
     padding: 1.25rem 1.8rem 1.25rem 1.8rem;
     color: white;
+    text-decoration: none;
   }
   
   header {
