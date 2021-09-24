@@ -14,19 +14,16 @@ body {
   }
   .lista a{
       text-decoration: none;
-<<<<<<< HEAD
       color: darkslategray;
   }
   .lista a:hover{
       font-size: 1.2rem;
       font-weight: bold;
-=======
       color: black;
   }
   .lista a:hover{
     font-size: 1.2rem;
     color: blue;
->>>>>>> 0e5a5ad946f8c9bf254e194a42ba2e67f5faee49
   }
   #primero {
     font-size: 1.9rem;
