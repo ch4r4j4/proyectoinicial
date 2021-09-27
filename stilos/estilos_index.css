@@ -1,7 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
   }
+/* html{
+} */
   
   h1 {
     font-size: 60px;
@@ -46,6 +49,10 @@ body {
     height: 12.2rem;
     padding: 9.2rem 0rem;  
     text-align: center;
+  }
+  .persona:hover{
+    width: 18%;
+    margin: -2rem;
   }
   
   .persona a{
