@@ -2,11 +2,14 @@
     --c-primario: #c5d3ff;
     --c-secundario: #8093ff;
     --c-terciario: #465aa0;
+    --blanco: #fff;
 }
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
+    
+    scroll-behavior: smooth;
 }
 
 *,*::before, *:after {
@@ -35,12 +38,32 @@ h3 {
     margin-bottom: 2rem;
     border-bottom: .1rem solid #ACA9B0;
 }
+/* utilidades */
 .contenedor{
     width: 80%;
     margin: 0 auto;
     padding-bottom: 4rem;
 }
 
+.boton {
+    background-color: red;
+    color: var(--blanco);
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+    /* align-items: flex-end; */
+}
+.boton-plomo{
+    background-color: #595260;
+}
+
+.boton-plomo:hover{
+    background-color: #3b363f;
+}
+
+.derecha {
+    display: flex;
+    justify-content: end;
+}
 
 /* header  */
 .encabezado{
@@ -62,14 +85,19 @@ h3 {
     justify-content: space-between;
 }
 .nombre-pag{
+    background-color: rgba(0, 0, 0, .4);
+    text-transform: uppercase;
     padding: 2rem;
     font-weight: 700;
     font-size: 2rem;
     color: white;
 }
+.nombre-pag span {
+    font-weight: 300;
+}
 .navegacion-url {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     text-transform: uppercase;
 }
 .navegacion-url a {
