@@ -11,6 +11,10 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-family: 'Boogaloo', cursive;
 }
+html{
+    scroll-behavior: smooth;
+    /*scroll-padding: 1px;*/
+}
 .container{
     top: 0;
     width: 100%;
@@ -21,7 +25,6 @@ body{
     position: absolute;
     text-align: center;
     font: 'Montserrat';
-    
 }
 .container1{
     top: 0;
@@ -41,6 +44,10 @@ body{
     height:16rem;
     width: 24rem;
     float: left;
+}
+
+.title img:hover{
+    filter: drop-shadow(20px 20px 15px rgba(5, 5, 5, 0.418));
 }
 
 
@@ -127,30 +134,28 @@ body{
     
 }
 
+.hero__texts h2{
+    font-family: 'Montserrat';
+    line-height: 2.5;
+}
+
 .hero__subtitles{
     font-size: 2rem;
     font-weight: 300;
     margin: 15px 0;
     text-align: center;
 }
-.hero__ctaaaa{
-    display: inline-block;
-    background: #fff;
-    padding: var(--boton-padding);
-    color: var(--color-primary);
-    text-decoration: none;
-    border-radius: 40px;
-    margin: 20px;
-}
 
 .hero__cta{
     display: inline-block;
     background-color: #fff;
-    padding: 1.2em 3em;
+    padding: .5em 2em;
     color: var(--color-primary);
     text-decoration: none;
     border-radius: 3em;
     margin: auto;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
 .mod{
@@ -161,6 +166,7 @@ body{
     right: 0;
     background-color: #006baddc;
     display: flex;
+    z-index: 1;
 
     --opacity: 0;
     --pointer: none;
@@ -174,7 +180,6 @@ body{
 .mod:target{
     --opacity: 1;
     --pointer: unset;
-
 }
 
 .mod__container{
@@ -187,6 +192,7 @@ body{
     text-align: center;
     padding: 2.5em 1.5em;
     border-radius: 2em;
+    z-index: 1;
 
 }
 
@@ -227,6 +233,94 @@ body{
     color: #006bad;
 }
 
+/*separadore*/
+
+.sesgoabajo{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 13vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.sesgoarriba{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 13vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+/*
+.sesgoabajo2{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 100vw 13vh 0;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+.sesgoarriba2{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 13vh 0 0 100vw;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+*/
+
+.galeria{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.imagenes{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    background-image: url('../img/img_Alexander/colegio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.transparente2{
+    background-color: #006bad;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    opacity: .5;
+}
+
+.encima{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.encima h2{
+    position: relative;
+    top: 23%;
+    text-align: center;
+    color: #fff;
+    font-size: 5rem;
+}
+
+/*----------------*/
 
 .hero__wabe{
     
@@ -234,7 +328,15 @@ body{
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 200px;
+    height: 150px;
+}
+.hero__wabe1{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
 }
 
 .presentation{
@@ -248,8 +350,8 @@ body{
 }
 
 .presentation__picture{
-    width: 150px;
-    height: 150px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     margin-bottom: 10px;
     object-fit: cover;
