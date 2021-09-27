@@ -16,14 +16,11 @@ body {
       text-decoration: none;
       color: darkslategray;
   }
-  .lista a:hover{
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: black;
-  }
+  
   .lista a:hover{
     font-size: 1.2rem;
     color: darkslategray;
+    font-weight: bold;
   }
   #primero {
     font-size: 1.9rem;
