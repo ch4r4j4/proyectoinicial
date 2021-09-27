@@ -100,9 +100,7 @@ video{
     grid-template-columns: 50% repeat(1, 2fr);
     column-gap: 3rem;
     margin-bottom: 4rem;
-}
-.datos{
-    margin-top: 2rem;
+    align-items: center;
 }
 .datos h2{
     margin-bottom: 3.5rem;
