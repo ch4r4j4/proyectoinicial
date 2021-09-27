@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 60px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-family: 'Permanent Marker';
+  }
+  
+  header {
+    background-color: #101010;
+    padding: 0.2rem 0rem;
+    height: 18vh;
+    background-size: cover;
+  }
+  
+  .contenedor {
+    max-width: 1280px;
+    padding-top: 0.5rem;
+    color: white;
+    font-family: 'Permanent Marker';
+  }
+  
+  h3 {
+    text-align: center;
+    font-family: 'Codystar', cursive;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+  .contenedor-adicional {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .persona {
+    width: 16.66666666%;
+    height: 12.2rem;
+    padding: 9.2rem 0rem;  
+    text-align: center;
+  }
+  
+  .persona a{
+    text-decoration: none;
+  }
+  
+  .Will a{
+    color: white;
+  }
+  .Will {
+    background-image: url(../img/img_chereje/amanecer.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .Wilson a{
+    color: white;
+  }
+  .Wilson {
+    background-image: url(../img/img_chereje/amanecer.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .Ayde a{
+    color: black;
+  }
+  .Ayde {
+    background-image: url(../img/img_chereje/amanecer.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .Chereje a{
+    color: white;
+  }
+  .Chereje{
+    background-image: url(../img/img_chereje/charaja.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .Papu a{
+    color: black;
+  }
+  .Papu {
+    background-image: url(../img/img_chereje/amanecer.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .Alexander a{
+    color: black;
+  }
+  .Alexander{
+    background-image: url(../img/img_chereje/amanecer.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .persona h2:hover{
+    font-size:  2.9rem;
+    background-size: 120%;
+  }
+  
+  footer{
+    width: 100%;
+    background: #202020;
+    color: white;   
+  }
+  
+  .container-footer{
+    width: 100%;  
+    background: #101010;
+  }
+  
+  .footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+  }
+  
+  .copyright{
+    color: white;
+  }
+  
+  .copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Arial Narrow Bold', cursive;
+  }
