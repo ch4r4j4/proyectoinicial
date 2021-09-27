@@ -17,18 +17,25 @@ img{
 }
 
 /*VIDEO*/
+.pantallaNegra{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .4;
+    position: absolute;
+    z-index: 1;
+}
 .header{
     position: relative;
 }
-.video{
-    /* position: relative; */
-}
 video{
+    position: relative;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;   
 }
 .agrupar{
+    z-index: 2;
     top: 0;
     position: absolute;
     width: 100%;
@@ -265,6 +272,7 @@ video{
 }
 /*redes Sociales*/
 .redesSociales{
+    z-index: 3;
     position: fixed;
     top: 25rem;
 }
