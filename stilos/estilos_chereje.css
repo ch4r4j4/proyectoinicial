@@ -92,6 +92,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: justify;
   }
   
   .contenedor-parrafo-y-boton {
@@ -118,6 +119,7 @@ body {
     border-radius: 0.62rem;
     margin-bottom: 2.5rem;
     color: #fff;
+    text-align: justify;
   }
   
   .violeta {
