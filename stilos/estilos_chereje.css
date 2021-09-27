@@ -16,14 +16,11 @@ body {
       text-decoration: none;
       color: darkslategray;
   }
-  .lista a:hover{
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: black;
-  }
+  
   .lista a:hover{
     font-size: 1.2rem;
     color: darkslategray;
+    font-weight: bold;
   }
   #primero {
     font-size: 1.9rem;
@@ -92,6 +89,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: justify;
   }
   
   .contenedor-parrafo-y-boton {
@@ -118,6 +116,7 @@ body {
     border-radius: 0.62rem;
     margin-bottom: 2.5rem;
     color: #fff;
+    text-align: justify;
   }
   
   .violeta {
