@@ -162,6 +162,7 @@ body{
     justify-content: space-evenly;
     padding-top: 2rem;
     padding-bottom: 2.50rem;
+    /*opacity: 0.5;*/
     
 }
 .habilidades__contenido{
@@ -176,6 +177,7 @@ body{
 }
 .habilidades__contenedor :hover{
     background-color: #111;
+    color: #f4f4f4;
     
 }
 .habilidades__contenido img{
