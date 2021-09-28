@@ -61,7 +61,7 @@ body {
   }
   .persona:hover{
     /* width: 20.8%; */
-    
+
     border: .3rem solid black;
     margin: -2rem;
     z-index: 1;
@@ -87,7 +87,7 @@ body {
     color: white;
   }
   .Wilson {
-    background-image: url(../img/img_chereje/amanecer.jpg);
+    background-image: url(../img/img_wilson/me2.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -190,6 +190,30 @@ body {
       /* margin-bottom: 4rem; */
     }
     .Chereje{
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .Ayde{
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .Will{
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .Wilson{
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .Papu{
       background-attachment: fixed;
       background-size: cover;
       background-repeat: no-repeat;
