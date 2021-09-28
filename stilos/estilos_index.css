@@ -2,6 +2,9 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    background-color: #101010;
+    /* display: flex;
+    flex-direction: column; */
   }
 /* html{
 } */
@@ -19,9 +22,8 @@ body {
   }
   
   header {
-    background-color: #101010;
     padding: 0.2rem 0rem;
-    height: 18vh;
+    /* height: 18vh; */
     background-size: cover;
   }
   
@@ -40,30 +42,44 @@ body {
   }
   
   .contenedor-adicional {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 16.6%);
+
+    align-items: center;
+    /* display: flex; */
     flex-wrap: wrap;
   }
-  
+
   .persona {
-    width: 16.66666666%;
-    height: 12.2rem;
-    padding: 9.2rem 0rem;  
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    /* width: 16.66666666%; */
+    min-height: 25rem;
+    align-items: center;
+    /* padding: 9.2rem 0rem;   */
     text-align: center;
+    position: relative;
   }
   .persona:hover{
-    width: 20.8%;
+    /* width: 20.8%; */
+
+    border: .2rem solid rgb(56, 56, 56);
     margin: -2rem;
     z-index: 1;
+    margin: 1 red 2.3rem  1.2%;
   }
   
   .persona a{
     text-decoration: none;
+    z-index: 0;
   }
   
   .Will a{
     color: white;
   }
   .Will {
+    position: relative;
     background-image: url(../img/img_chereje/amanecer.jpg);
     background-size: cover;
     background-position: center;
@@ -73,7 +89,7 @@ body {
     color: white;
   }
   .Wilson {
-    background-image: url(../img/img_chereje/amanecer.jpg);
+    background-image: url(../img/img_wilson/me2.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -122,7 +138,13 @@ body {
   footer{
     width: 100%;
     background: #202020;
-    color: white;   
+    color: white;
+    margin-top: 12%; 
+  }
+  @media(min-width:1540px){
+    footer {
+      margin-top: 20%;
+    }
   }
   
   .container-footer{
@@ -131,6 +153,7 @@ body {
   }
   
   .footer{
+    display: flex;
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -148,3 +171,73 @@ body {
     font-weight: bold;
     font-family: 'Arial Narrow Bold', cursive;
   }
+  /*OVERLAY */
+  
+  .overlay{
+    /* width: 100%; */
+    z-index: 2;
+    /* top: 1; */
+    height: 100%;
+    position: absolute;
+    background-color: burlywood;
+    overflow: hidden;
+    transition: .5s ease;
+  }
+  /*Modo Responsive*/
+@media screen and (max-width:600px) {
+    .contenedor-adicional{
+      display: grid;
+      /* flex-direction: column; */
+      grid-template-columns: 100%;
+
+    }
+    .persona{
+      min-height: 1.5rem;
+      /* padding-top: 5rem; */
+    }
+    .persona h2, h3{
+      /* margin-bottom: 4rem; */
+    }
+    .Chereje{
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .Ayde{
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .Will{
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .Wilson{
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .Papu{
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .persona:hover{
+        color: blue;
+    }
+    .persona h2:hover{
+      color: blueviolet;
+    }
+    .persona:hover{
+      /* width: 20.8%; */
+      margin: -1rem;
+      /* z-index: 1; */
+    }
+
+}
