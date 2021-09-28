@@ -303,3 +303,32 @@ video{
     padding:.5rem 1.5rem .5rem 1.5rem;
     background-color:  #349CDF; 
 }
+/*CASA*/
+.casa{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    position: fixed;
+    top: 25rem;
+    right: 0;
+    left: 1;
+}
+.dato{
+    text-align: center;
+    z-index: 4;
+    background-color: gainsboro;
+    font-size: 4rem;
+    color: black;
+    width: 6rem;
+    /* padding-left: 4rem; */
+    padding: 1.2rem;
+    border-radius: 5rem;
+}
+.dato a{
+    text-decoration: none;
+    color: black;
+}
+.dato a:hover{
+    font-size: 4.5rem;
+    color: blueviolet;
+}
