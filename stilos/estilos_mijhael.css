@@ -218,6 +218,8 @@ body{
     width: 100%;
     color: #f8f8f8;;
     
+}.socials{
+    display: flex;
 }
 /*footer*/
 
