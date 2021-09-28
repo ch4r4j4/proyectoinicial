@@ -17,6 +17,12 @@ body {
       color: darkslategray;
   }
   
+  .lista img{
+      width: 1.8rem;
+      height: 1.8rem;
+      margin-right: 1.2rem;
+  }
+
   .lista a:hover{
     font-size: 1.2rem;
     color: darkslategray;
