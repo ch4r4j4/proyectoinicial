@@ -312,6 +312,7 @@ video{
     top: 25rem;
     right: 0;
     left: 1;
+    z-index: 4;
 }
 .dato{
     text-align: center;
