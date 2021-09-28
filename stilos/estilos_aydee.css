@@ -7,16 +7,11 @@ img{
     width: 100%;
     height: 100%;
 }
-video{
-    width: 100%;
-    height: 100%;
-}
+
 /*HEADER*/
 .contenedor-general{
     max-width: 60rem;
     margin: 0 auto;
-}
-.contenedor1{
 }
 .cabezera{
     background-color: black;
@@ -24,10 +19,7 @@ video{
     display: flex;
     width: 100%;
     justify-content: space-between;
-
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 12rem; */
+    z-index: 1;
 }
 .cabezera h1{
     padding-left: 3rem;
@@ -47,81 +39,151 @@ video{
     justify-content: space-around;
 }
 .menu li{
-    margin-top: 1.5rem; /*1.5rem*/
+    margin-top: 1.5rem;
     margin-left: 2rem;
-
 }
 .menu li a:hover{
-    color: greenyellow;
-    
+    color: yellow;
+    text-decoration:underline;
+    border-style:solid; 
 }
 .centrado{
     background-image: url(../img/img_aydee/ja.jpg);
     background-size: 100%;
-    height: 6rem; /*30rem*/
+    height: 6rem;
     padding-top: 33rem;
     font-size: 4rem;
     color: white;
     text-align: center;
 }
 
-/*sobre mi*/
+/*SOBRE MI*/
 .historia{
     display: grid;
-    grid-template-columns: 70% 30%  repeat(2, 1fr);
-    column-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
 }
-
-/*musica*/
-.listamusical{
+.descripcion p {
+    margin-top: -4rem;
+}
+.primerparrafo{
+    margin-top: -4rem;
+}
+.historia li{
+    font-size: 1.4rem;
+    font-family: 'Nunito', sans-serif;
+}
+.descripcion h4{
+    margin-top: 1.5rem;
+    font-size: 3rem;
+}
+.mihistoria h4{
+    font-size: 3rem;
+    margin-top: 1.5rem;
+}
+.mihistoria i{
+    color: gold;
+    font-size: 2rem;
+}
+p{
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
+}
+li{
+    text-align: justify;
+}
+/*EDUCACION*/
+.ed{
     display: grid;
-    grid-template-columns:  repeat(3, 1fr);
-    column-gap: 2rem;
-    color: black;
-}
-.listamusical img{
-    align-self: center;
-    
-}
-.datosmusicales a{
-    color:black;
-}
-.datosmusicales a:hover{
-    color:rgba(84, 235, 38, 0.795);
-}
-.datosmusicales p{
-    font-style: oblique;
-    font-size: 1rem;
-    margin-top: 0.2rem;
-    color:darkseagreen;
-}
-.datosmusicales1 a{
-    color: black;
-}
-.datosmusicales1 a:hover{
-    color:rgba(84, 235, 38, 0.795);
-}
-.datosmusicales1 p{
-    font-style: oblique;
-    font-size: 1rem;
-    margin-top: 0.2rem;
-    color:darkseagreen;
-}
-/*FRASES*/
-/*.frasesGeneral{
-    display: grid;
-    grid-template-columns: 40% 60% repeat(2, 1fr);
-    column-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
     margin-bottom: 4rem;
 }
-.frasesGeneral img{
-    align-self: center;
-    background-attachment: fixed;
-   
-}*/
+.titulo p{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Bonheur Royale', cursive;
+    height: 1rem;
+}
+.educacion1 p{
+    width: 100%;
+}
+.titulo1 p{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Bonheur Royale', cursive;
+    height: 1rem;
+}
+/*FORMACION*/
+.formacion {
+    display: flex;
+    padding-left: 40%;
+    background: cornflowerblue;
+    height: 4rem;
+    border-style:solid;
+}
+.formacion p{
+    font-family: 'Bonheur Royale', cursive;
+    padding-left: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 0.3rem;
+}
+.formacion i{
+    font-size: 4rem;
+}
+.idioma {
+    display: flex;
+    padding-left: 40%;
+    background: darkcyan;
+    height: 4rem;
+    border-style:solid;
+}
+.idioma p{
+    font-family: 'Bonheur Royale', cursive;
+    padding-left: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 0.3rem;
+}
+.idioma i{
+    font-size: 4rem;
+}
+/*MUSICA*/
+.listamusical{
+    display: grid;
+    grid-template-columns: 58% 40% repeat(2, 1fr);
+    column-gap: 1rem;
+    color: black;
+}
+.canciones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+}
+.datosmusicales1 audio{
+    background: chartreuse;
+    margin-top: 1.2rem;
+    width: 20rem;
+    height: 2.5rem;
+}
+.datosmusicales li{
+    color:black;
+    font-size: 1.5rem;
+}
+.datosmusicales li p{
+    font-style: oblique;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    color:darkseagreen;
+}
 .steve{
     height: 30%;
 }
+
+/*FRASES*/
+
 .lasfrases{
     min-width: 30rem;
     display: grid;
@@ -136,9 +198,44 @@ video{
     line-height: 1.5rem;
     text-align: center;
 }
-/*Subtitulos*/
+
+/*CONTACTO*/
+.contactar{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: 1rem;
+    margin-left: 2rem;
+}
+.contactar i{
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 3rem;
+}
+.gmail{
+    display: grid;
+    grid-template-columns:10% 70% repeat(2, 1fr);
+    column-gap: 2rem;
+}
+.telefono{
+    display: grid;
+    grid-template-columns:10% 70% repeat(2, 1fr);
+    column-gap: 2rem;
+}
+.contactar h4{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/*SUBTITULOS*/
+
 .sobremi h3{
     color:blueviolet;
+    font-family: fantasy;
+    font-size: 2.5rem;
+}
+.mieducacion h3{
+    color:rgb(226, 43, 180);
     font-family: fantasy;
     font-size: 2.5rem;
 }
@@ -148,37 +245,21 @@ video{
     font-size: 2.5rem;
 }
 .frases h3{
+    color:rgb(33, 147, 175);
+    font-family: fantasy;
+    font-size: 2.5rem;
+}
+.contacto h3{
     color:royalblue;
     font-family: fantasy;
     font-size: 2.5rem;
 }
-/*-tipo de letra*/
-p{
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.3rem;
-}
-.frases li{
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.3rem;
-}
-.listamusical a{
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.3rem;
-    text-decoration: none;
-}
-/*footer*/
-.contenedorFinal{
-    padding-top: 2rem;
-    text-align: center;
-    color: white;
-    height: 4rem;
-    font-size: 2rem;
-    background-color: black;
-}
-/*
-IMAGEN*/
+
+/*SEPARADORES*/
+
 .separador{
     background-image: url(../img/img_aydee/aurora.jpg);
+    margin-top: 7rem;
     height: 8rem;
     background-size: cover;
     background-position: center;
@@ -186,6 +267,20 @@ IMAGEN*/
 }
 .separadormusical{
     background-image: url(../img/img_aydee/concierto.jpg);
+    height: 8rem;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.separadorfrases{
+    background-image: url(../img/img_aydee/fondofrases.jpg);
+    height: 8rem;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.separadorestudios{
+    background-image: url(../img/img_aydee/estudio.jpg);
     height: 8rem;
     background-size: cover;
     background-position: center;
@@ -201,10 +296,53 @@ IMAGEN*/
     text-align: center;
     padding: 3rem;
 }
+.separadorfrases h1{
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
+.separadorestudios h1{
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
 
 hr{
     margin-top: -2rem;
 }
+
+/*FOOTER*/
+
+.contenedorFinal{
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    text-align: center;
+    color: white;
+    height: 4rem;
+    font-size: 2rem;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 70% repeat(2, 1fr);
+}
+.contenedorFinal p{
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 1.5rem;
+    margin-top: 0rem;
+}
+.redes-sociales{
+    display: flex;
+    justify-content: space-around;
+}
+.redes-sociales a {
+    color: white;
+    text-decoration: none;
+}
+
+.redes-sociales a:hover {
+    color:lightseagreen;
+}
+
 @media screen and (max-width:650px) {
     /*.frasesGeneral{
         display: grid;
@@ -214,6 +352,10 @@ hr{
         width: 60%;
         padding-left: 6rem;
     }*/
+    .ed{
+        display: grid;
+        grid-template-columns: 100%; 
+    }
     .lasfrases{
         display: grid;
         grid-template-columns: 100%;
@@ -230,6 +372,14 @@ hr{
     .listamusical img{
         width: 80%;
         padding-left: 6rem;
+    }
+    .historia{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .contactar{
+        display: grid;
+        grid-template-columns: 100%;
     }
     html{
         font-size: 9px;
