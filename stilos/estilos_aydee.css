@@ -56,7 +56,13 @@ img{
     color: white;
     text-align: center;
 }
-
+.cabezera a i{
+    color: white;
+}
+.cabezera a i:hover{
+    border-style: none;
+    color:red;
+}
 /*SOBRE MI*/
 .historia{
     display: grid;
