@@ -38,7 +38,8 @@ html{
 }
 
 .title img{
-    position: relative;
+    display: block;
+    position: absolute;
     margin-top: 0;
     margin-left: 0;
     height:16rem;
@@ -119,18 +120,26 @@ html{
 }
 
 .hero__container{
-    display: flex;
-    height: calc(100vh - 70px);
+    display: absolute;
+    height: calc(100vh - 7rem);
     align-items: center;
     color: #fff;
+    padding: 5%;
     
 }
 
 .hero__texts{
-    width: 70rem;
+    /*width: 100%;
     color: #fff;
     text-align: center;
-    margin: 0rem 0rem 30rem -2rem;
+    justify-items: center;
+    /*margin: 0rem 0rem 30rem -2rem;*/
+    top: 0;
+    color: white;
+    text-align: center;
+    margin-bottom: 0rem;
+    justify-items: center;
+    margin: 0rem 0rem 30rem -2rem
     
 }
 
@@ -254,27 +263,6 @@ html{
     border-style: solid;
     border-color: #fff transparent transparent transparent;
 }
-/*
-.sesgoabajo2{
-    z-index: 10;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-width: 0 100vw 13vh 0;
-    border-style: solid;
-    border-color: transparent transparent white transparent;
-}
-
-.sesgoarriba2{
-    z-index: 10;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-width: 13vh 0 0 100vw;
-    border-style: solid;
-    border-color: white transparent transparent transparent;
-}
-*/
 
 .galeria{
     width: 100%;
@@ -377,9 +365,10 @@ html{
 h1{
     font-size: 80px;
     font-weight: 100%;
-    z-index: 100;
+    z-index: 10;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    display: block;
 }
 
 h1::after{
@@ -645,13 +634,6 @@ footer{
     h1::after{
         display: none;
     }
-}
-    
-.final{
-    width: auto;
-    padding: 10px;
-    margin-top: auto;
-    text-align: center;
-    color: #fff;
+
 }
 
