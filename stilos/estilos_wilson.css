@@ -19,23 +19,24 @@ img{
 .pantallaNegra{
     width: 100%;
     height: 100%;
-    background-color: black;
-    opacity: .4;
+    background-color:  #5D6D7E ;
+    opacity: .5;
     position: absolute;
-    z-index: 1;
+    z-index: 4;
 }
 .header{
     position: relative;
+    /* z-index: 5; */
 }
 video{
     position: relative;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;   
-    z-index: 2;
+    z-index: 3;
 }
 .agrupar{
-    z-index: 2;
+    z-index: 5;
     top: 0;
     position: absolute;
     width: 100%;
@@ -84,7 +85,7 @@ video{
     margin-bottom: 2rem;
 }
 .contenidoPrincipal{
-    z-index: 4;
+    z-index: 1;
 }
 /* Contenido princiapal*/
 .contenidoPrincipal h1{
@@ -268,11 +269,13 @@ video{
     }
 }
 .boton{
+    
+    text-decoration: none;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     padding: 0.8rem;
     color: white;
-    background-color: green;
+    background-color: #c97c5e;
     border-color: green;
     border-radius: .3rem;
     cursor: pointer;
@@ -284,7 +287,7 @@ video{
 }
 /*redes Sociales*/
 .redesSociales{
-    z-index: 3;
+    z-index: 6;
     position: fixed;
     top: 25rem;
 }
@@ -326,7 +329,7 @@ video{
     top: 25rem;
     right: 0;
     left: 1;
-    z-index: 4;
+    z-index: 2;
 }
 .dato{
     text-align: center;
@@ -346,4 +349,21 @@ video{
 .dato a:hover{
     font-size: 4.5rem;
     color: blueviolet;
+}
+/*Corazon*/
+.fa-heart{
+    font-size: 2.1rem;
+    cursor: pointer;
+    margin-left: 1.2rem;
+}
+/*Corazon animado*/
+
+.alerta{
+    background-color: red;
+    animation-name: alerta;
+    animation-duration: 2s;
+}
+@keyframes alerta {
+    from {background-color: yellow;}
+    to {background-color: red;}
 }
