@@ -336,7 +336,7 @@ video{
     position: absolute;
     z-index: 3;
 }
-.form button{
+.form input{
     margin-top: 2rem;
     z-index: 4;
 }
@@ -360,6 +360,24 @@ video{
     background-color: whitesmoke;
     border-radius: 0.5rem;
     width: 100%;
+}
+/* MENSAJE */
+.alertaError{
+    min-width: 2rem;
+    padding: 1.2rem;
+    text-align: center;
+    background-color: rgb(243, 52, 52);
+    font-weight: 600;
+    color: white;
+    z-index: 7;
+}
+.alertaCorrecto{
+    padding: 1.2rem;
+    text-align: center;
+    background-color: rgb(209, 107, 12);
+    font-weight: 600;
+    color: white;
+    z-index: 7;
 }
 .formI textarea{
     
