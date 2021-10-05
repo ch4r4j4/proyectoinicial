@@ -7,6 +7,8 @@
     <title>Ayd</title>
     <!-- <link href="stilos/estilos_aydee.css" rel="stylesheet" type="text/css"> -->
     <link rel="stylesheet" href="stilos/estilos_aydee.css">
+    <script type="text/javascript" src="js/aydeeJs/script.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Allison&family=Indie+Flower&family=Metal&family=Nanum+Brush+Script&family=Nunito:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Italianno&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stilos/normalize.css">
@@ -269,7 +271,21 @@
             </div>
         </div>
     </div>
-
+    <div class="formuu contenedor-general">
+        <form id="Formulario" onSubmit="AccionFormulario()">
+            <table>
+                <tr> 
+                    <th id="UsuText" align="left">Nombres y Apellidos:</th>
+                    <th><input id="Nombres" type="text"></input></th>
+                </tr>
+                <tr>
+                    <th id="PassText" align="left">Comentario:</th>
+                    <th><input id="Comentario" type="text"></input></th>
+                    <th><input type="submit" value="Enviar"></input></th>
+                </tr>
+            </table>             
+        </form>
+    </div>
     <div class="contenedorFinal">
         <p> Copyright &#169 2021 Creado y diseñado por Aydee ZC. Todos los derechos reservados. </p>
         <div class="redes-sociales">
