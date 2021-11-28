@@ -34,10 +34,14 @@ formulario.addEventListener('submit',function (e) {
         return;
     }else{
         mensajeEnviar('Enviado Correctamente');
+        // datos[e.target.id]== '';
+        // console.log(datos);
+        limpiar(e);
+        // const {nombre, email, mensaje} = datos;
     }
 });
 function limpiar(e) {
-    datos[e.target.id]='';
+    datos[e.target.id]==null;
     console.log(datos);
 }
 function mensajeEnviar(mensaje, alerta) {
@@ -59,6 +63,7 @@ function mensajeEnviar(mensaje, alerta) {
     }, 2000);
 
 }
+
 // function correcto(mensaje) {
     
 //     setTimeout(() => {
@@ -71,4 +76,4 @@ function mensajeEnviar(mensaje, alerta) {
 //         add.remove();
 //     }, 4000);
     
-// }
+// 

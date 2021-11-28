@@ -6,7 +6,7 @@ const corazon= document.querySelector('#corazon');
 campana.addEventListener('click', function () {
     Notification.requestPermission()
     .then(result => console.log(`se activo la notificacion ${result}`));
-    if(campana == 'granted'){
+    if(campana === 'granted'){
         campana.style.color='yellow';
     }
     
