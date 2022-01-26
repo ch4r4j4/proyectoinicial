@@ -11,12 +11,11 @@ function enviarMensaje(e) {
     console.log(datos);
 }
 console.log(datos);
-const name = document.querySelector('#nombre');
+const name = document.querySelector('#nombre').addEventListener('input', enviarMensaje);;
 const mail = document.querySelector('#email');
 const message = document.querySelector('#mensaje');
 const formulario = document.querySelector('.form');
 
-const nombre = name.addEventListener('input', enviarMensaje);
 mail.addEventListener('input', enviarMensaje);
 message.addEventListener('input', enviarMensaje);
 

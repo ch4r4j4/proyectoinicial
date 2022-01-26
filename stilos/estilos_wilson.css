@@ -200,11 +200,27 @@ video{
     background-attachment: fixed;
     margin-bottom: 4rem;
 }
+.proyectosGH{
+    background-image:  linear-gradient(135deg, rgba(196,203,211,1) 0%,rgba(86,83,0,1) 15%,rgba(86,83,0,1) 40%,rgba(86,83,0,1) 52%,rgba(254,191,1,1) 65%,rgba(86,83,0,1) 79%,rgba(86,83,0,1) 93%);
+    min-height: 15rem;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 4rem;
+
+}
 .musica h1{
     text-align: center;
     color: white;
     padding-top: 5.5rem;
     font-size: 5rem;
+}
+.proyectosGH h1{
+    text-align: center;
+    color: white;
+    padding-top: 5.5rem;
+    font-size: 5rem;
+
 }
 .misgustos {
     font-size: 1.6rem;
@@ -513,4 +529,18 @@ video{
 @keyframes alerta {
     from {background-color: yellow;}
     to {background-color: red;}
+}
+/* miRepositorio */
+.miRep {
+    
+    text-align: center;
+}
+.fa-github-square{
+    color: black;
+    font-size: 5rem;
+    margin-bottom: 2.5rem;
+}
+.fa-github-square:hover{
+    color: rgb(88, 88, 8);
+    font-size: 5.45rem;
 }
