@@ -7,7 +7,6 @@ function igualar() {
     // datos[e.target.id]=
 }
 function enviarMensaje(e) {
-    console.log(e.target.value);
     datos[e.target.id] = e.target.value;
     console.log(datos);
 }
@@ -17,7 +16,7 @@ const mail = document.querySelector('#email');
 const message = document.querySelector('#mensaje');
 const formulario = document.querySelector('.form');
 
-name.addEventListener('input', enviarMensaje);
+const nombre = name.addEventListener('input', enviarMensaje);
 mail.addEventListener('input', enviarMensaje);
 message.addEventListener('input', enviarMensaje);
 
@@ -34,10 +33,8 @@ formulario.addEventListener('submit',function (e) {
         return;
     }else{
         mensajeEnviar('Enviado Correctamente');
-        // datos[e.target.id]== '';
         // console.log(datos);
         limpiar(e);
-        // const {nombre, email, mensaje} = datos;
     }
 });
 function limpiar(e) {
